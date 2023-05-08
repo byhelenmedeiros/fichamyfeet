@@ -64,11 +64,12 @@ label {
   margin-top: 5px;
 }
 
-label::before {
+label.required::before {
   content: "*";
   color: red;
   margin-right: 5px;
 }
+
 
 .progress{
   margin-bottom: 20px;

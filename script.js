@@ -35,3 +35,18 @@ nextPageBtn.addEventListener('click', () => {
   progressBar.setAttribute('aria-valuenow', progress);
   progressBar.textContent = `${progress}% completo`;
 });
+
+
+//aparecer a seccao quando marca SIM//
+
+const qualCirurgia = document.getElementById('qual_cirurgia');
+  const nao = document.getElementById('nao');
+  const sim = document.getElementById('sim');
+
+  nao.addEventListener('click', function() {
+    qualCirurgia.style.display = 'none';
+  });
+
+  sim.addEventListener('click', function() {
+    qualCirurgia.style.display = 'block';
+  });
