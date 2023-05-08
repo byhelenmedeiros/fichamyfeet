@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.btn-primary {
+    margin: 10px;
+  }
+
+  body{
+    background: #fff;
+  }
+.container{
+    background: #eeeeee;
+    border-radius: 20px;
+}

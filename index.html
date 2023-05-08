@@ -7,16 +7,25 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>Ficha de anamnese - Myfeet</title>
 </head>
 <body>
-    <h1 > Ficha anamnese - MyFeet</h1>
+    <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="text-success"> Ficha anamnese - MyFeet</h1>
+          </div>
+       
     <form>
         <div class="form-group">
-          <label for="nome" required >Nome:</label>
-          <input type="text" class="form-control" id="nome">
+          <label for="nome" >Nome:</label>
+          <input type="text" class="form-control" id="nome" required>
+        </div>
+        <div class="form-group">
+          <label for="sobrenome" required >Sobrenome:</label>
+          <input type="text" class="form-control" id="sobrenome">
         </div>
         <div class="form-group">
           <label for="data-nascimento">Data de Nascimento:</label>
@@ -33,9 +42,17 @@
             <option value="feminino">Feminino</option>
             <option value="outro">Outro</option>
           </select>
+          <div class="form-group">
+            <label for="contato">Contato:</label>
+            <input type="number" class="form-control" id="nome" required placeholder="(xx) 9 0000-0000 ">
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Próximo passo</button>
+            </div>
       </form>
+    </div>
+</div>
       
     
 </body>
