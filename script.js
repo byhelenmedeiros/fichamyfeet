@@ -22,7 +22,7 @@ function proximaPagina() {
 }
 
 const progressBar = document.querySelector('.progress-bar');
-const nextPageBtn = document.querySelector('#next-page-btn');
+const nextPageBtn = document.querySelector('#btn btn-primary');
 
 let progress = 0;
 
