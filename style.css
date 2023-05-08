@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 700px;
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
@@ -58,4 +58,10 @@ label {
   font-size: 0.8rem;
   color: red;
   margin-top: 5px;
+}
+
+label::before {
+  content: "*";
+  color: red;
+  margin-right: 5px;
 }
