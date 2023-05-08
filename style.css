@@ -72,4 +72,5 @@ label::before {
 
 .progress-bar {
   border-radius: 10px; 
+  left: 0;
 }
