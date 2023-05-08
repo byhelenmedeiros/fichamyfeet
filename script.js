@@ -15,3 +15,23 @@ $(document).ready(function() {
         }
     });
 });
+
+
+function proximaPagina() {
+    window.location.href = "pagina2.html";
+}
+
+const progressBar = document.querySelector('.progress-bar');
+const nextPageBtn = document.querySelector('#next-page-btn');
+
+let progress = 0;
+
+nextPageBtn.addEventListener('click', () => {
+  // Adiciona 25% ao progresso
+  progress += 25;
+
+  // Atualiza a largura da barra de progresso e a porcentagem
+  progressBar.style.width = `${progress}%`;
+  progressBar.setAttribute('aria-valuenow', progress);
+  progressBar.textContent = `${progress}% completo`;
+});

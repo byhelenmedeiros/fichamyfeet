@@ -54,6 +54,10 @@ label {
 }
 
 
+.btn-secondary{
+  margin-bottom: 10px;
+}
+
 .error-message {
   font-size: 0.8rem;
   color: red;
@@ -74,3 +78,5 @@ label::before {
   border-radius: 10px; 
   left: 0;
 }
+
+
