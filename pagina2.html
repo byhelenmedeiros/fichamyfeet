@@ -37,7 +37,7 @@
             </div>
 
             <div class="form-group">
-              <label for="cirurgia">Já fez alguma cirurgia nos membros inferiores?</label><br>
+              <label for="cirurgia">Já fez alguma cirurgia nos membros inferiores?</label>
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="cirurgia" id="sim" value="sim" onclick="document.getElementById('qual_cirurgia').style.display = 'block';">
                 <label class="form-check-label" for="sim">Sim</label>
@@ -50,6 +50,21 @@
             <div class="form-group" id="qual_cirurgia" style="display: none;">
               <label>Qual?</label>
               <input type="text" class="form-control" name="qual_cirurgia" placeholder="Digite aqui">
+            </div>
+            <div class="form-group">
+              <label for="esporte">Pratica Algum Esporte?</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="esporte" id="sim" value="sim">
+                <label class="form-check-label" for="sim">Sim</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="esporte" id="nao" value="nao">
+                <label class="form-check-label" for="nao">Não</label>
+              </div>
+            </div>
+            <div class="form-group" id="esporte-qual-container" style="display: none;">
+              <label>Qual?</label>
+              <input type="text" class="form-control" name="esporte_qual" placeholder="Digite aqui o esporte">
             </div>
             
             

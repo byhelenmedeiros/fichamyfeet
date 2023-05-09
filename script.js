@@ -37,16 +37,28 @@ nextPageBtn.addEventListener('click', () => {
 });
 
 
-//aparecer a seccao quando marca SIM//
-
+// aparecer a seção quando marca SIM para cirurgia
 const qualCirurgia = document.getElementById('qual_cirurgia');
-  const nao = document.getElementById('nao');
-  const sim = document.getElementById('sim');
+const nao = document.getElementById('nao');
+const sim = document.getElementById('sim');
 
-  nao.addEventListener('click', function() {
-    qualCirurgia.style.display = 'none';
-  });
+nao.addEventListener('click', function() {
+  qualCirurgia.style.display = 'none';
+});
 
-  sim.addEventListener('click', function() {
-    qualCirurgia.style.display = 'block';
-  });
+sim.addEventListener('click', function() {
+  qualCirurgia.style.display = 'block';
+});
+
+const esporteSimRadio = document.getElementById("sim");
+const esporteQualContainer = document.getElementById("esporte-qual-container");
+
+esporteSimRadio.addEventListener("click", function() {
+  esporteQualContainer.style.display = "block";
+});
+
+const esporteNaoRadio = document.getElementById("nao");
+
+esporteNaoRadio.addEventListener("click", function() {
+  esporteQualContainer.style.display = "none";
+});
