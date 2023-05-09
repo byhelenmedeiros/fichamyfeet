@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
 
-    <title>Ficha de anamnese - Myfeet </title>
+    <title>Ficha de anamnese - Observações Profissionais</title>
 </head>
 <body>
     <div class="container d-flex justify-content-center">
@@ -25,8 +25,61 @@
           <div class="col text-center">
             <h1 class="text-success"> Ficha anamnese podológica - MyFeet</h1>
           </div>
-          <p>Preencher a ficha de anamnese de podologia é um processo crucial para o profissional de podologia entender o histórico médico do paciente, incluindo condições pré-existentes, histórico de lesões nos pés e possíveis alergias. </p>
-
+          <h2>Observações Profissionais:</h2>
+          <div class="form-group">
+            <label for="peDireito">Pé Direito</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="peDireito" id="normalPeDireito" value="normal">
+              <label class="form-check-label" for="normalPeDireito">Normal</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="peDireito" id="palidoPeDireito" value="palido">
+              <label class="form-check-label" for="palidoPeDireito">Pálido</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="peDireito" id="cianoticoPeDireito" value="cianotico">
+              <label class="form-check-label" for="cianoticoPeDireito">Cianótico</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="peDireito" id="edemaPeDireito" value="edema">
+              <label class="form-check-label" for="edemaPeDireito">Com Edema</label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="peEsquerdo">Pé Esquerdo</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="peEsquerdo" id="normalPeEsquerdo" value="normal">
+              <label class="form-check-label" for="normalPeEsquerdo">Normal</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="peEsquerdo" id="palidoPeEsquerdo" value="palido">
+              <label class="form-check-label" for="palidoPeEsquerdo">Pálido</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="peEsquerdo" id="cianoticoPeEsquerdo" value="cianotico">
+              <label class="form-check-label" for="cianoticoPeEsquerdo">Cianótico</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="peEsquerdo" id="edemaPeEsquerdo" value="edema">
+              <label class="form-check-label" for="edemaPeEsquerdo">Com Edema</label>
+            </div>
+          </div>
+          <hr>
+          <div class="form-group">
+            <label for="pressaoArterial">Pressão Arterial:</label>
+            <div class="input-group">
+              <input type="number" class="form-control" id="pressaoArterialPD" name="pressaoArterialPD" placeholder="PD">
+              <div class="input-group-append">
+                <span class="input-group-text">segundos</span>
+              </div>
+              <input type="number" class="form-control" id="pressaoArterialPE" name="pressaoArterialPE" placeholder="PE">
+              <div class="input-group-append">
+                <span class="input-group-text">segundos</span>
+              </div>
+            </div>
+          </div>
+          
           
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 75%; border-radius: 20px; background-color: #007bff;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
