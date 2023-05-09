@@ -78,4 +78,7 @@ label {
   left: 0;
 }
 
-
+.custom-textarea {
+  height: 60px;
+  resize: none;
+}
