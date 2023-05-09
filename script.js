@@ -33,3 +33,16 @@ const esporteNaoRadio = document.getElementById("esporte-nao");
 esporteNaoRadio.addEventListener("click", function() {
   esporteQualContainer.style.display = "none";
 });
+
+const medicamentoSimRadio = document.getElementById("medicamento-sim");
+const medicamentoQualContainer = document.getElementById("medicamento-qual-container");
+
+medicamentoSimRadio.addEventListener("click", function() {
+  medicamentoQualContainer.style.display = "block";
+});
+
+const medicamentoNaoRadio = document.getElementById("medicamento-nao");
+
+medicamentoNaoRadio.addEventListener("click", function() {
+  medicamentoQualContainer.style.display = "none";
+});
