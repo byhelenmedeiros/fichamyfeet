@@ -58,3 +58,12 @@ const medicamentoNaoRadio = document.getElementById("medicamento-nao");
 medicamentoNaoRadio.addEventListener("click", function() {
   medicamentoQualContainer.style.display = "none";
 });
+
+
+
+//base de dados//
+
+document.getElementById('formulario').addEventListener('submit', function(event) {
+  event.preventDefault(); // Evita o comportamento padrão de envio do formulário
+  enviarDadosParaBancoDeDados();
+});
