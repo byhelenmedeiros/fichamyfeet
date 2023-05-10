@@ -63,7 +63,7 @@ medicamentoNaoRadio.addEventListener("click", function() {
 
 //base de dados//
 
-document.getElementById('formulario').addEventListener('submit', function(event) {
+document.getElementById('meuFormulario').addEventListener('submit', function(event) {
   event.preventDefault(); // Evita o comportamento padrão de envio do formulário
   enviarDadosParaBancoDeDados();
 });

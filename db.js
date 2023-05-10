@@ -34,28 +34,12 @@ function insertFormData(formData, callback) {
   });
 }
 
-module.exports = {
-  connectToDatabase,
-  insertFormData,
-};
 
 
 
 // Função para lidar com o envio do formulário
 function handleSubmit(event) {
     event.preventDefault();
-
-    // Obtenha os valores dos campos do formulário
-    const nome = document.getElementById('nome').value;
-    const sobrenome = document.getElementById('sobrenome').value;
-    // Obtenha os valores dos outros campos do formulário
-
-    // Crie um objeto com os dados do formulário
-    const formData = {
-      nome: nome,
-      sobrenome: sobrenome,
-      // Preencha os outros campos do objeto com seus respectivos valores
-    };
 
     // Conecte-se ao banco de dados
     connectToDatabase();
@@ -130,3 +114,9 @@ function handleSubmit(event) {
       possuiProblemasCirculatorios: possuiProblemasCirculatorios
     };
   }
+
+  module.exports = {
+    connectToDatabase,
+    insertFormData,
+  };
+  
