@@ -3,9 +3,9 @@ const mysql = require('mysql');
 // Configuração da conexão com o banco de dados
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'seu_usuario',
-  password: 'sua_senha',
-  database: 'nome_do_banco_de_dados',
+  user: 'myfeet',
+  password: 'admin',
+  database: 'db_ficha',
 });
 
 // Função para conectar ao banco de dados
@@ -71,9 +71,8 @@ function handleSubmit(event) {
     });
   }
 
-  // Associe a função handleSubmit ao evento de envio do formulário
-  const form = document.getElementById('formulario');
-  form.addEventListener('submit', handleSubmit);
+  document.getElementById('meuFormulario').addEventListener('submit', handleSubmit);
+
 
   // Função para lidar com o envio do formulário
   function handleSubmit(event) {
