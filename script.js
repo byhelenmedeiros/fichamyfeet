@@ -1,4 +1,16 @@
+const { connection, conectarBancoDeDados } = require('./db');
 
+// Estabelece a conexão com o banco de dados
+conectarBancoDeDados();
+
+// Agora você pode utilizar a conexão para realizar operações no banco de dados
+connection.query('SELECT * FROM nome-da-tabela', (err, results) => {
+  if (err) {
+    console.error('Erro ao executar consulta:', err);
+  } else {
+    console.log('Dados recuperados:', results);
+  }
+});
 
 function proximaPagina() {
     window.location.href = "pagina2.html";

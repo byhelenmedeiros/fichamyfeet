@@ -1,6 +1,19 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "jquery": "^3.6.4"
-  }
+    "jquery": "^3.6.4",
+    "mysql": "^2.18.1"
+  },
+  "name": "myfeet",
+  "description": "Com o objetivo de criar uma ficha de anamnese online de podologia com uma aparência profissional e funcionalidades interativas, foram utilizadas as tecnologias Bootstrap, CSS, JavaScript e HTML. O Bootstrap permitiu a criação de páginas responsivas e adaptáveis, além de fornecer uma biblioteca de componentes e estilos prontos para uso. O CSS foi utilizado para personalizar elementos HTML, como cores, fontes e layout, garantindo um visual único e agradável para a ficha. O JavaScript possibilitou a criação de interações dinâmicas e comportamentos específicos na página, como validação de formulários e animações. Já o HTML foi utilizado para criar a estrutura básica da página, com elementos como formulários, tabelas e listas.",
+  "version": "1.0.0",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cadastro"
+  ],
+  "author": "Helen Medeiros",
+  "license": "ISC"
 }
