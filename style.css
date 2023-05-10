@@ -71,14 +71,16 @@ label {
 .progress{
   margin-bottom: 20px;
   margin-top: 20px;
+
 }
 
-.progress-bar {
-  border-radius: 20px; 
-  left: 0;
-}
+
 
 .custom-textarea {
   height: 60px;
   resize: none;
+}
+
+.row {
+  --bs-gutter-x: 0;
 }
