@@ -1,4 +1,4 @@
-const { connection, conectarBancoDeDados } = require('./db');
+const { connection, conectarBancoDeDados } = require('db');
 
 // Estabelece a conexão com o banco de dados
 conectarBancoDeDados();

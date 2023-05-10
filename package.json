@@ -16,5 +16,8 @@
     "cadastro"
   ],
   "author": "Helen Medeiros",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^17.0.0"
+  }
 }
