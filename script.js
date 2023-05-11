@@ -1,17 +1,5 @@
 
 
-// Estabelece a conexão com o banco de dados
-conectarBancoDeDados();
-
-// Agora você pode utilizar a conexão para realizar operações no banco de dados
-connection.query('SELECT * FROM nome-da-tabela', (err, results) => {
-  if (err) {
-    console.error('Erro ao executar consulta:', err);
-  } else {
-    console.log('Dados recuperados:', results);
-  }
-});
-
 function proximaPagina() {
     window.location.href = "pagina2.html";
 }
@@ -61,9 +49,27 @@ medicamentoNaoRadio.addEventListener("click", function() {
 
 
 
-//base de dados//
-
 document.getElementById('meuFormulario').addEventListener('submit', function(event) {
   event.preventDefault(); // Evita o comportamento padrão de envio do formulário
-  enviarDadosParaBancoDeDados();
+
+  // Obtenha os dados do formulário
+  const formData = new FormData(this);
+
+  // Crie uma solicitação AJAX
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', 'seu_arquivo_php.php', true);
+
+  // Defina o cabeçalho apropriado para enviar dados de formulário
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+  // Manipulador de eventos para quando a solicitação AJAX for concluída
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      // Atualize o elemento HTML com a resposta do servidor
+      document.getElementById('resultado').innerHTML = xhr.responseText;
+    }
+  };
+
+  // Envie os dados do formulário como corpo da solicitação AJAX
+  xhr.send(new URLSearchParams(formData));
 });
