@@ -1,4 +1,4 @@
-const { connection, conectarBancoDeDados } = import('db');
+
 
 // Estabelece a conexão com o banco de dados
 conectarBancoDeDados();
