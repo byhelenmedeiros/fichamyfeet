@@ -27,7 +27,7 @@
           </div>
           <p>Por favor, preencha todos os campos com atenção e cuidado, pois essas informações são fundamentais para o atendimento adequado do podólogo. Todos os dados fornecidos são confidenciais e serão utilizados exclusivamente para fins de tratamento.<br> Obrigado pela colaboração.</p>
        
-          <form id="meuFormulario">
+          <form action="processar_formulario.php" method="POST">
         <div class="form-group">
           <label for="nome" >Nome:</label>
           <input type="text" class="form-control" id="nome" required>
@@ -62,7 +62,7 @@
             
         
             <div class="text-center">
-                <button type="button" class="btn btn-primary" onclick="proximaPagina()">Próximo Passo</button>
+                <button type="button" id="btn-avancar" class="btn btn-primary" onclick="proximaPagina()">Próximo Passo</button>
 
             </div>
         </div>

@@ -20,6 +20,9 @@
     <title>Ficha de anamnese - Myfeet </title>
 </head>
 <body>
+
+<form action="pagina2.php" method="post">
+  
     <div class="container d-flex justify-content-center">
         <div class="row col-lg-8">
           <div class="col text-center">
@@ -156,6 +159,14 @@
               </div>
             </div>
             
+            
+            <div class="form-group">
+              <label for="termos-condicoes" class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="termos-condicoes" required>
+                Li e concordo com os termos e condições
+              </label>
+            </div>
+
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
             </div>
@@ -167,7 +178,9 @@
           </form>
           <div class="btn-group">
             <button onclick="history.go(-1);" type="button" class="btn btn-secondary">Voltar</button>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button id="enviarFormulario" type="submit" class="btn btn-primary">Enviar</button>
+
+
           </div>
           
             </div>
@@ -175,6 +188,5 @@
     </div>
 
     <script src="script.js"></script>
-    <script src="bundle.js"></script>
 </body>
 </html>
