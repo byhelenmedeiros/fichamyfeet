@@ -40,8 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Prepara a query SQL para inserir os dados no banco de dados
   $sql = "INSERT INTO tabela (nome, sobrenome, data_nascimento, cidade, sexo, contato, meia, tipo_meia, numero_calcado, cirurgia, qual_cirurgia, esporte, esporte_qual, medicamento, medicamento_qual, gravida, sensibilidade_dor, possui_marca_passo, possui_pressao_alta, possui_convulsoes, possui_antecedentes_cancer, possui_diabetes, possui_problemas_circulatorios)
-          VALUES ('$nome', '$sobrenome', '$dataNascimento', '$
-          '$cidade', '$sexo', '$contato', '$meia', '$tipoMeia', '$numeroCalcado', '$cirurgia', '$qualCirurgia', '$esporte', '$esporteQual', '$medicamento', '$medicamentoQual', '$gravida', '$sensibilidadeDor', '$possuiMarcaPasso', '$possuiPressaoAlta', '$possuiConvulsoes', '$possuiAntecedentesCancer', '$possuiDiabetes', '$possuiProblemasCirculatorios')";
+  VALUES ('$nome', '$sobrenome', '$dataNascimento', '$cidade', '$sexo', '$contato', '$meia', '$tipoMeia', '$numeroCalcado', '$cirurgia', '$qualCirurgia', '$esporte', '$esporteQual', '$medicamento', '$medicamentoQual', '$gravida', '$sensibilidadeDor', '$possuiMarcaPasso', '$possuiPressaoAlta', '$possuiConvulsoes', '$possuiAntecedentesCancer', '$possuiDiabetes', '$possuiProblemasCirculatorios')";
+
   
   if ($conn->query($sql) === TRUE) {
     echo "Dados inseridos com sucesso!";

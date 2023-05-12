@@ -1,15 +1,18 @@
+// Verifica se o formulário existe na página
+const formulario = document.getElementById('meuFormulario');
+if (formulario) {
+  // Se o formulário existir, adiciona o evento de envio
+  formulario.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita o comportamento padrão de envio do formulário
 
-function proximaPagina() {
-  window.location.href = "pagina2.php";
+    // Captura os dados do formulário
+    const formData = new FormData(formulario);
+
+    // Envia os dados para a próxima página
+    window.location.href = "pagina2.php?" + new URLSearchParams(formData).toString();
+  });
 }
 
-
-const btnAvancar = document.getElementById("btn-avancar");
-btnAvancar.addEventListener("click", proximaPagina);
-
-
-const progressBar = document.querySelector('.progress-bar');
-const nextPageBtn = document.querySelector('#btn btn-primary');
 
 
 // aparecer a seção quando marca SIM para cirurgia
@@ -52,11 +55,27 @@ medicamentoNaoRadio.addEventListener("click", function() {
 });
 
 
-document.getElementById('enviarFormulario').addEventListener('click', function(event) {
-  event.preventDefault();
-  // Evita o comportamento padrão de envio do formulário
-  enviarDadosParaBancoDeDados(); // Chama a função para enviar os dados para o servidor
-});
+  // Obtenha os dados do formulário
+  const formData = new FormData(document.getElementById('meuFormulario'));
+
+  // Crie uma solicitação AJAX
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', 'pagina2.php', true);
+
+  // Defina o cabeçalho apropriado para enviar dados de formulário
+  // No caso de envio de dados usando FormData, o cabeçalho 'Content-Type' é definido automaticamente
+
+  // Manipulador de eventos para quando a solicitação AJAX for concluída
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      // Atualize o elemento HTML com a resposta do servidor
+      document.getElementById('resultado').innerHTML = xhr.responseText;
+    }
+  };
+
+  // Envie os dados do formulário como corpo da solicitação AJAX
+  xhr.send(formData);
+
 
 
 

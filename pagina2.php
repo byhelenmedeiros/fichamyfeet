@@ -20,9 +20,9 @@
     <title>Ficha de anamnese - Myfeet </title>
 </head>
 <body>
+<form action="pagina3.php" method="post">
 
-<form action="pagina2.php" method="post">
-  
+
     <div class="container d-flex justify-content-center">
         <div class="row col-lg-8">
           <div class="col text-center">
@@ -30,7 +30,6 @@
           </div>
           <p>Preencher a ficha de anamnese de podologia é um processo crucial para o profissional de podologia entender o histórico médico do paciente, incluindo condições pré-existentes, histórico de lesões nos pés e possíveis alergias. </p>
 
-          <form id="meuFormulario">
             <div class="form-group">
               <label for="meia">Tipo de meia que mais usa:</label>
               <input type="text" class="form-control" id="meia" name="meia" placeholder="Digite o tipo de meia">
@@ -170,16 +169,11 @@
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
             </div>
-            
-            
-            
-            
-            
-          </form>
+        
           <div class="btn-group">
             <button onclick="history.go(-1);" type="button" class="btn btn-secondary">Voltar</button>
             <button id="enviarFormulario" type="submit" class="btn btn-primary">Enviar</button>
-
+            </form>
 
           </div>
           
@@ -188,5 +182,8 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+     <script src="script.js"></script>
 </body>
 </html>

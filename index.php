@@ -20,6 +20,9 @@
     <title>Ficha de anamnese - Myfeet </title>
 </head>
 <body>
+  
+<form id="meuFormulario" action="pagina2.php" method="POST">
+
     <div class="container d-flex justify-content-center">
         <div class="row col-lg-8">
           <div class="col text-center">
@@ -27,7 +30,7 @@
           </div>
           <p>Por favor, preencha todos os campos com atenção e cuidado, pois essas informações são fundamentais para o atendimento adequado do podólogo. Todos os dados fornecidos são confidenciais e serão utilizados exclusivamente para fins de tratamento.<br> Obrigado pela colaboração.</p>
        
-          <form action="processar_formulario.php" method="POST">
+          <form action="pagina2.php" method="post" id="dadosPessoaisForm">
         <div class="form-group">
           <label for="nome" >Nome:</label>
           <input type="text" class="form-control" id="nome" required>
@@ -62,7 +65,7 @@
             
         
             <div class="text-center">
-                <button type="button" id="btn-avancar" class="btn btn-primary" onclick="proximaPagina()">Próximo Passo</button>
+                <button type="submit" id="btn-avancar" class="btn btn-primary" onclick="proximaPagina()">Próximo Passo</button>
 
             </div>
         </div>
@@ -72,6 +75,9 @@
       
       
       <script src="script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+
 
 
 </body>
